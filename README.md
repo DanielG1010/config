@@ -20,4 +20,7 @@ asciinema  to record commands and outputs, and share with URL
 atuin is a tool to manage command hisotry with a sqlite database:
 bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
 
+ripgrep is faster than grep, to disable ripgrep fast feature and behave more like grep use -uuu flag
+rg 
+
 floorp is a mozilla based opensource web browser highly customizable, syncing, and other great fetures:  [floorp](https://floorp.app/en/)
