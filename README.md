@@ -24,3 +24,12 @@ ripgrep is faster than grep, to disable ripgrep fast feature and behave more lik
 rg 
 
 floorp is a mozilla based opensource web browser highly customizable, syncing, and other great fetures:  [floorp](https://floorp.app/en/)
+
+neovim, it can be install with apt but for a more recent version, which seems to be requried by lunarvim i had to build from source, wasnt easy though, follow instructions well
+[neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
+
+
+
+
+
+
