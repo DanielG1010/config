@@ -28,6 +28,8 @@ floorp is a mozilla based opensource web browser highly customizable, syncing, a
 neovim, it can be install with apt but for a more recent version, which seems to be requried by lunarvim i had to build from source, wasnt easy though, follow instructions well
 [neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
 
+Nice IDE, it might not be very fast, compared to vim or neovim, but it looks to have a lot of things, I'll be trying it
+[lvim](https://www.lunarvim.org/docs/installation)
 
 
 
