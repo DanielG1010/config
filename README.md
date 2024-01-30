@@ -31,7 +31,7 @@ neovim, it can be install with apt but for a more recent version, which seems to
 Nice IDE, it might not be very fast, compared to vim or neovim, but it looks to have a lot of things, I'll be trying it
 [lvim](https://www.lunarvim.org/docs/installation)
 
-
+autojump to cd to recent directories easily
 
 
 
