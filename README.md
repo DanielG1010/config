@@ -33,5 +33,7 @@ Nice IDE, it might not be very fast, compared to vim or neovim, but it looks to 
 
 autojump to cd to recent directories easily
 
+starship is a cross-shell-prompt that can make your bash/zsh nice: [starship](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+
 
 
