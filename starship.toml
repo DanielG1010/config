@@ -1,6 +1,7 @@
 format = """
 [░▒▓](#a3aed2)\
 [  ](bg:#a3aed2 fg:#090c0c)\
+$conda
 [](bg:#166775 fg:#a3aed2)\
 $directory\
 [](fg:#166775 bg:#394260)\
@@ -14,6 +15,12 @@ $php\
 [](fg:#212736 bg:#1d2230)\
 [ ](fg:#1d2230)\
 \n$character"""
+
+# ~/.config/starship.toml
+
+[conda]
+format = '[$symbol$environment](dimmed green) '
+
 
 [directory]
 style = "fg:#e3e5e5 bg:#166775"
