@@ -35,5 +35,7 @@ autojump to cd to recent directories easily
 
 starship is a cross-shell-prompt that can make your bash/zsh nice: [starship](https://starship.rs/guide/#%F0%9F%9A%80-installation)
 
+cht.sh is a command line tool ( it can also be used without installing using curl ) to query both cheat sheets from several programming languages and linux tools, and also to query general questions from stackoverflow and other services right in your terminal.
+All details are [here](https://github.com/chubin/cheat.sh)
 
 
