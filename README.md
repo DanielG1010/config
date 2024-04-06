@@ -1,6 +1,8 @@
 # config
 Stores configuration files
 
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) is a nice configure zsh shell with a lot of features ready.
+
 
 xsel --clipboard 
 
@@ -38,4 +40,13 @@ starship is a cross-shell-prompt that can make your bash/zsh nice: [starship](ht
 cht.sh is a command line tool ( it can also be used without installing using curl ) to query both cheat sheets from several programming languages and linux tools, and also to query general questions from stackoverflow and other services right in your terminal.
 All details are [here](https://github.com/chubin/cheat.sh)
 
+
+To remap the caps lock key to something better, in this case I remap it to Enter:
+Change the file with sudo:
+```
+sudo vim /usr/share/X11/xkb/symbols/pc
+sudo rm -rf /var/lib/xkb/*
+```
+
+To make the changes load `setxkbmap -layout latam` or if using other keyboard layout like `us` then change `latam` for `us`
 
