@@ -74,6 +74,13 @@ plugins=(git git-commit wd web-search python pep8)
 
 source $ZSH/oh-my-zsh.sh
 
+alias dimage="xclip -selection clipboard -t image/png -o > \"\$(date +%Y-%m-%d_%T).png\""
+alias mic="micromamba"
+
+
+export EDITOR="lvim"
+eval "$(thefuck --alias --shell sh)"
+alias copy="xsel --clipboard"
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -103,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
 export MAMBA_EXE='/home/daniel/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='Y';
+export MAMBA_ROOT_PREFIX='/home/daniel/micromamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
@@ -112,3 +119,7 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+
+eval "$(atuin init zsh)"
+ eval "$(starship init zsh)"
+
