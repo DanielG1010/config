@@ -53,3 +53,5 @@ To make the changes load `setxkbmap -layout latam` or if using other keyboard la
 Find a lot of cli tools in [charm](https://charm.sh/) currently trying glow and mods
 
 To set pretty format for json file in vim :%!jq .
+
+If the clangd lsp does not detect files, symlink the compile_commands.json file which should be in the buildidr to the root dir of the project
