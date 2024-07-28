@@ -220,7 +220,8 @@ config.unix_domains = {
 
 
 
-config.font_size = 10.0
+config.font_size = 13.0
+-- For 4k 28 inch 13,0 seems adquater, fro 1080 usually 10.0
 -- local pattern = 'gst-launch-1\\.0\\s+[a-zA-Z0-9]+\\s+!'
 -- local pattern_2 = [[\s+6]]
 -- local pattern = [[gst-launch-1\.0(\s+[a-zA-Z0-9]+\s+!*)*]]
