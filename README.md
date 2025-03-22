@@ -55,3 +55,8 @@ Find a lot of cli tools in [charm](https://charm.sh/) currently trying glow and 
 To set pretty format for json file in vim :%!jq .
 
 If the clangd lsp does not detect files, symlink the compile_commands.json file which should be in the buildidr to the root dir of the project
+
+To change default terminal:
+```
+sudo update-alternatives --config x-terminal-emulator
+```
