@@ -60,3 +60,5 @@ To change default terminal:
 ```
 sudo update-alternatives --config x-terminal-emulator
 ```
+Use kickstart for neovim
+https://github.com/nvim-lua/kickstart.nvim
