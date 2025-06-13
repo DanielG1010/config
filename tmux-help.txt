@@ -1,0 +1,69 @@
+# TMUX KEYBINDINGS HELP
+
+ PREFIX: Ctrl+Space
+
+ GENERAL
+ -------
+ PREFIX r          Reload tmux config
+ PREFIX H          Show this help menu (vertical split)
+ PREFIX Alt+H      Show this help menu (horizontal split)
+
+ WINDOWS
+ -------
+ Alt+t            Create new window
+ Alt+w            Kill current window
+ Alt+n            Next window
+ Alt+p            Previous window
+ Alt+[1-5]        Switch to window [1-5]
+
+ PANES
+ -----
+ PREFIX |          Split pane horizontally
+ PREFIX -          Split pane vertically
+ Alt+h             Select left pane
+ Alt+j             Select down pane
+ Alt+k             Select up pane
+ Alt+l             Select right pane
+ Alt+Arrow         Select pane in arrow direction
+
+ COPY MODE
+ ---------
+ Ctrl+Shift+x      Enter copy mode
+ v                 Start selection
+ V                 Select entire line
+ Ctrl+v or r       Toggle rectangle/block selection
+ y                 Copy selection and exit copy mode
+ Escape            Cancel and exit copy mode
+
+ NAVIGATION IN COPY MODE:
+ h,j,k,l           Move cursor
+ w                 Next word
+ b                 Previous word
+ e                 End of word
+ W,B,E             Same for space-separated words
+ ^                 Start of line
+ $                 End of line
+ g                 Go to top of history
+ G                 Go to bottom of history
+ Ctrl+u            Half page up
+ Ctrl+d            Half page down
+ Ctrl+b            Page up
+ Ctrl+f            Page down
+ %                 Jump to matching bracket
+
+ SEARCH
+ ------
+ PREFIX /          Search forward
+ PREFIX ?          Search backward
+ Ctrl+f            Search forward (shortcut)
+ Ctrl+Shift+f      Search backward (shortcut)
+ n                 Next search result (in copy mode)
+ N                 Previous search result (in copy mode)
+ Ctrl+n            Next search result (global)
+ Ctrl+Shift+n      Previous search result (global)
+
+ SESSION MANAGEMENT
+ -----------------
+ PREFIX d          Detach from session
+ PREFIX $          Rename session
+ PREFIX s          List sessions
