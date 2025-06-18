@@ -5,8 +5,8 @@
  GENERAL
  -------
  PREFIX r          Reload tmux config
- PREFIX H          Show this help menu (vertical split)
- PREFIX Alt+H      Show this help menu (horizontal split)
+ PREFIX h          Show this help menu (vertical split)
+ PREFIX i          Show this help menu (horizontal split)
 
  WINDOWS
  -------
