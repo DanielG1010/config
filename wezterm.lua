@@ -1,16 +1,14 @@
 -- Pull in the wezterm API
-local wezterm = require 'wezterm'
+local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
 
-
 -- In newer versions of wezterm, use the config_builder which will
 -- help provide clearer error messages
 if wezterm.config_builder then
-  config = wezterm.config_builder()
+	config = wezterm.config_builder()
 end
-
 
 -- How many lines of scrollback you want to retain per tab
 config.scrollback_lines = 10000
@@ -22,39 +20,39 @@ config.scrollback_lines = 10000
 local act = wezterm.action
 
 config.keys = {
--- To sroll up and down with keys
-  { key = 'UpArrow', mods = 'SHIFT', action = act.ScrollByLine(-1) },
-  { key = 'DownArrow', mods = 'SHIFT', action = act.ScrollByLine(1) },
-  { key = 'LeftArrow', mods = 'SHIFT', action = act.ScrollByLine(-20) },
-  { key = 'RightArrow', mods = 'SHIFT', action = act.ScrollByLine(20) },
+	-- To sroll up and down with keys
+	{ key = "UpArrow", mods = "SHIFT", action = act.ScrollByLine(-1) },
+	{ key = "DownArrow", mods = "SHIFT", action = act.ScrollByLine(1) },
+	{ key = "LeftArrow", mods = "SHIFT", action = act.ScrollByLine(-20) },
+	{ key = "RightArrow", mods = "SHIFT", action = act.ScrollByLine(20) },
 
--- Use vim motion to change size panes with control shitf letter, notice that the debug console acces with control shift L was lost
-  { key = 'LeftArrow', mods = 'ALT', action = act.AdjustPaneSize {'Left', 3} },
-  { key = 'DownArrow', mods = 'ALT', action = act.AdjustPaneSize {'Down', 1} },
-  { key = 'UpArrow', mods = 'ALT', action = act.AdjustPaneSize {'Up', 1} },
-  { key = 'RightArrow', mods = 'ALT', action = act.AdjustPaneSize {'Right', 3} },
+	-- Use vim motion to change size panes with control shitf letter, notice that the debug console acces with control shift L was lost
+	{ key = "LeftArrow", mods = "ALT", action = act.AdjustPaneSize({ "Left", 3 }) },
+	{ key = "DownArrow", mods = "ALT", action = act.AdjustPaneSize({ "Down", 1 }) },
+	{ key = "UpArrow", mods = "ALT", action = act.AdjustPaneSize({ "Up", 1 }) },
+	{ key = "RightArrow", mods = "ALT", action = act.AdjustPaneSize({ "Right", 3 }) },
 
--- To use vim motions to move between panes, with control shift
-  {
-    key = 'H',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Left',
-  },
-  {
-    key = 'J',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Down',
-  },
-  {
-    key = 'K',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Up',
-  },
-  {
-    key = 'L',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Right',
-  },
+	-- To use vim motions to move between panes, with control shift
+	{
+		key = "H",
+		mods = "CTRL",
+		action = act.ActivatePaneDirection("Left"),
+	},
+	{
+		key = "J",
+		mods = "CTRL",
+		action = act.ActivatePaneDirection("Down"),
+	},
+	{
+		key = "K",
+		mods = "CTRL",
+		action = act.ActivatePaneDirection("Up"),
+	},
+	{
+		key = "L",
+		mods = "CTRL",
+		action = act.ActivatePaneDirection("Right"),
+	},
 }
 -- config.leader = { key = 'a', mods = 'CTRL' }
 -- config.keys = {
@@ -76,7 +74,7 @@ config.keys = {
 --   },
 -- }
 
-config.color_scheme = 'Tokyo Night'
+config.color_scheme = "Tokyo Night"
 --config.color_scheme = 'Symfonic'
 --config.color_scheme = 'Thayer Bright'
 --config.color_scheme = 'ToyChest'
@@ -89,7 +87,7 @@ config.color_scheme = 'Tokyo Night'
 --config.font = wezterm.font 'JetBrains Mono'
 -- config.font_dirs = { '/home/daniel/.local/share/fonts' }
 -- config.font_locator = 'ConfigDirsOnly'
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+-- config.font = wezterm.font 'JetBrainsMono Nerd Font'
 
 --[[
 wezterm.on('update-right-status', function(window, pane)
@@ -186,39 +184,37 @@ config.window_background_gradient = {
 }
 --]]
 config.ssh_domains = {
-  {
-    -- This name identifies the domain
-    name = 'p6',
-    -- The hostname or address to connect to. Will be used to match settings
-    -- from your ssh config file
-    remote_address = '172.21.6.205',
-    -- The username to use on the remote host
-    username = 'dgonzalez',
-    remote_wezterm_path = "/usr/local/bin/wezterm"
-  },
-  {
-    -- This name identifies the domain
-    name = 'k80',
-    -- The hostname or address to connect to. Will be used to match settings
-    -- from your ssh config file
-    remote_address = '172.21.6.185',
-    -- The username to use on the remote host
-    username = 'dgonzalez',
-    remote_wezterm_path = "/home/dgonzalez/bin/wezterm"
-  },
+	{
+		-- This name identifies the domain
+		name = "p6",
+		-- The hostname or address to connect to. Will be used to match settings
+		-- from your ssh config file
+		remote_address = "172.21.6.205",
+		-- The username to use on the remote host
+		username = "dgonzalez",
+		remote_wezterm_path = "/usr/local/bin/wezterm",
+	},
+	{
+		-- This name identifies the domain
+		name = "k80",
+		-- The hostname or address to connect to. Will be used to match settings
+		-- from your ssh config file
+		remote_address = "172.21.6.185",
+		-- The username to use on the remote host
+		username = "dgonzalez",
+		remote_wezterm_path = "/home/dgonzalez/bin/wezterm",
+	},
 }
 config.unix_domains = {
 	{
 		name = "p6_wez",
-		proxy_command = { "ssh", "-A" ,"-T","-l","dgonzalez", "p6", "wezterm", "cli", "jumper-siplab" },
+		proxy_command = { "ssh", "-A", "-T", "-l", "dgonzalez", "p6", "wezterm", "cli", "jumper-siplab" },
 	},
-  {
+	{
 		name = "k80_wez",
 		proxy_command = { "ssh", "-T", "k80", "wezterm", "cli", "jumper-siplab" },
 	},
 }
-
-
 
 config.font_size = 13.0
 -- For 4k 28 inch 13,0 seems adquater, fro 1080 usually 10.0
