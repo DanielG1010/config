@@ -62,3 +62,6 @@ sudo update-alternatives --config x-terminal-emulator
 ```
 Use kickstart for neovim
 https://github.com/nvim-lua/kickstart.nvim
+
+### Learn X in Y minutes
+https://learnxinyminutes.com/
