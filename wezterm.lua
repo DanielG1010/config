@@ -11,7 +11,7 @@ if wezterm.config_builder then
 end
 
 -- How many lines of scrollback you want to retain per tab
-config.scrollback_lines = 10000
+config.scrollback_lines = 50000
 
 -- This is where you actually apply your config choices
 
