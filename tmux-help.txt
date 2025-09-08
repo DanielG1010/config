@@ -15,6 +15,7 @@
  Alt+n            Next window
  Alt+p            Previous window
  Alt+[1-5]        Switch to window [1-5]
+ PREFIX X         Kill pane
 
  PANES
  -----
@@ -28,7 +29,7 @@
 
  COPY MODE
  ---------
- Ctrl+Shift+x      Enter copy mode
+ PREFIX x      Enter copy mode
  v                 Start selection
  V                 Select entire line
  Ctrl+v or r       Toggle rectangle/block selection
