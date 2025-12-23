@@ -65,3 +65,20 @@ https://github.com/nvim-lua/kickstart.nvim
 
 ### Learn X in Y minutes
 https://learnxinyminutes.com/
+
+### Pandoc convert formats
+
+Convert from markdown to pdf, mediawiki, html or other formats and viceversa:
+
+```bash
+pandoc doc.md -o doc.wiki
+```
+
+### Task managment
+
+Use taskwarrior to handle pending tasks and todos in the terminal
+
+```bash
+sudo apt install taskwarrior
+task add Buy milk
+```
